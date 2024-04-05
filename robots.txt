@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://overdd.github.io/sitemap-index.xml

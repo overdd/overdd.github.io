@@ -1,63 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Overdd - developer's portfolio</title>
-<style>
-  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
-  .container { max-width: 960px; margin: auto; padding: 20px; }
-  header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
-  h1 { margin: 0; }
-  nav { text-align: center; padding: 10px 0; }
-  nav a { color: #333; text-decoration: none; padding: 0 15px; }
-  .hero { padding: 50px 0; text-align: center; }
-  .hero h2 { margin: 0; }
-  .about, .projects { padding: 20px 0; }
-  footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
-</style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Overdd - Developer</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overdd.github.io</title>
+    <meta name="description" content="Single page portfolio" />
+    <meta name="author" content="Emma" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/astro/index.ghrZxNON.css" />
+  </head>
+  <body class="bg-slate-900 text-gray-100">
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <div
+        class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <a href="/"
+          ><div
+            class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"
+          >
+            <svg
+              class="mr-1 h-10 w-10 stroke-cyan-600"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M0 0h24v24H0z" stroke="none"></path>
+              <rect x="3" y="12" width="6" height="8" rx="1"></rect>
+              <rect x="9" y="8" width="6" height="12" rx="1"></rect>
+              <rect x="15" y="4" width="6" height="16" rx="1"></rect>
+              <path d="M4 20h14"></path></svg
+            >overdd.github.io
+          </div></a
+        >
+        <nav>
+          <ul class="flex gap-x-3 font-medium text-gray-200">
+            <li class="hover:text-white">
+              <a href="/posts/" target="_self">Blog</a>
+            </li>
+            <li class="hover:text-white">
+              <a
+                href="https://github.com/overdd?tab=repositories"
+                target="_self"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header>
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <div
+        class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24"
+      >
+        <div>
+          <h1 class="text-3xl font-bold">
+            Hello world, I&#x27;m
+            <span
+              class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
+              >Overdd</span
+            >
+          </h1>
+          <p class="mt-6 text-xl leading-9">
+            Passionate JS/TS/Node.js developer and tech entusiast.
+          </p>
+          <div class="mt-3 flex gap-1"></div>
+        </div>
+        <div class="shrink-0">
+          <img
+            src="/assets/images/avatar.png"
+            alt="Avatar image"
+            loading="lazy"
+          />
+        </div>
+      </div>
     </div>
-  </nav>
-  <section class="hero">
-    <div class="container">
-      <h2>Welcome to My Portfolio</h2>
-      <p>I'm a passionate JavaScript/TypeScript/Node.js developer.</p>
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <div class="mb-6 text-2xl font-bold">
+        Recent
+        <span
+          class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
+          >Projects</span
+        >
+      </div>
+      <div class="flex flex-col gap-6">
+        <div
+          class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
+        >
+          <div class="shrink-0">
+            <a
+              ><img
+                class="h-36 w-36 hover:translate-y-1"
+                src="/assets/images/websocket-chat.png"
+                alt="Websocket chat"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <div class="flex flex-col items-center gap-y-2 md:flex-row">
+              <a class="hover:text-cyan-400"
+                ><div class="text-xl font-semibold">
+                  AWS-hosted Websocket chat
+                </div></a
+              >
+              <div class="ml-3 flex flex-wrap gap-2">
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"
+                >
+                  AWS
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900"
+                >
+                  Websocket
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-indigo-400 text-indigo-900"
+                >
+                  Lambda
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-emerald-400 text-emerald-900"
+                >
+                  DynamoDB
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900"
+                >
+                  FE+BE
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900"
+                >
+                  Typescript
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-gray-400">
+              Websocket chat with DynamoDB as a storage for sessions and
+              messages written on TypescriptS. <br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="http://websocket-chat-aws-fe.s3-website-us-east-1.amazonaws.com/"
+                >Web interface</a
+              >
+              <br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="wss://ie86io8gk6.execute-api.us-east-1.amazonaws.com/dev"
+                >WSS endpoint</a
+              >
+              <br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="https://github.com/overdd/websocket-chat-aws-be"
+                >Github BE repo</a
+              ><br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="https://github.com/overdd/websocket-chat-aws-fe"
+                >Github FE repo</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
+        >
+          <div class="shrink-0">
+            <a
+              ><img
+                class="h-36 w-36 hover:translate-y-1"
+                src="/assets/images/link-shortener.png"
+                alt="Link shortener"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <div class="flex flex-col items-center gap-y-2 md:flex-row">
+              <a class="hover:text-cyan-400"
+                ><div class="text-xl font-semibold">Link shortener</div></a
+              >
+              <div class="ml-3 flex flex-wrap gap-2">
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"
+                >
+                  AWS
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-indigo-400 text-fuchsia-900"
+                >
+                  EBS
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-yellow-400 text-fuchsia-900"
+                >
+                  RDS
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-violet-400 text-violet-900"
+                >
+                  Node.js
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-emerald-400 text-emerald-900"
+                >
+                  Postgres
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900"
+                >
+                  Typescript
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-gray-400">
+              Node.js link shortener with Postgres as a storage. Versions for
+              local run and for AWS (EBS+RDS).<br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="http://link-shortener-sjk38dduw7e-env.eba-bcfbjdpb.us-east-1.elasticbeanstalk.com/"
+                >Web interface (AWS EBS)</a
+              ><br />
+              <a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="https://github.com/overdd/link-shortener-nodejs-postgres"
+                >Github repo</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
+        >
+          <div class="shrink-0">
+            <a
+              ><img
+                class="h-36 w-36 hover:translate-y-1"
+                src="/assets/images/todo-app.png"
+                alt="ToDo App"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <div class="flex flex-col items-center gap-y-2 md:flex-row">
+              <a class="hover:text-cyan-400"
+                ><div class="text-xl font-semibold">
+                  ToDo app with local storage
+                </div></a
+              >
+              <div class="ml-3 flex flex-wrap gap-2">
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"
+                >
+                  Node.js
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-indigo-400 text-indigo-900"
+                >
+                  SQLite3
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900"
+                >
+                  TypeScript
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-gray-400">
+              ToDo app with CLI input and SQLite3 as a storage solution<br /><a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="https://github.com/overdd/todo-app-typescript-nodejs"
+                >Github repo</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
+        >
+          <div class="shrink-0">
+            <a
+              ><img
+                class="h-36 w-36 hover:translate-y-1"
+                src="/assets/images/photo-crawler.png"
+                alt="Yandex Disk"
+                loading="lazy"
+            /></a>
+          </div>
+          <div>
+            <div class="flex flex-col items-center gap-y-2 md:flex-row">
+              <a class="hover:text-cyan-400"
+                ><div class="text-xl font-semibold">
+                  Yandex Disk photo crawler
+                </div></a
+              >
+              <div class="ml-3 flex flex-wrap gap-2">
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"
+                >
+                  Node.js
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-indigo-400 text-indigo-900"
+                >
+                  Puppeteer
+                </div>
+                <div
+                  class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900"
+                >
+                  TypeScript
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-gray-400">
+              Downloader of full-size pictures saved to Yandex Disk Photos
+              section using Puppeter and Typescript.<br /><a
+                class="text-cyan-400 hover:underline"
+                target="_blank"
+                href="https://github.com/overdd/yandex-disk-photo-crawler"
+                >Github repo</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Here you can add information about your skills, experience, and background.</p>
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <div class="mb-6 text-2xl font-bold">
+        <div class="flex items-baseline justify-between">
+          <div>
+            Recent
+            <span
+              class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
+              >Posts</span
+            >
+          </div>
+          <div class="text-sm"><a href="/posts/">View all Posts →</a></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <a class="hover:translate-y-1" href="/posts/hello-world/"
+          ><div class="overflow-hidden rounded-md bg-slate-800">
+            <div class="aspect-w-3 aspect-h-2">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="/assets/images/image-post6.jpeg"
+                alt="Image post 6"
+                loading="lazy"
+              />
+            </div>
+            <div class="px-3 pt-4 pb-6 text-center">
+              <h2 class="text-xl font-semibold">Hello Lorem ipsum dolor sit</h2>
+              <div class="mt-1 text-xs text-gray-400">Jan 1, 2020</div>
+              <div class="mt-2 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                vero esse non molestias eos excepturi.
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
     </div>
-  </section>
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <p>Highlight some of your best work here with a brief description and links to live demos or GitHub repositories.</p>
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <div class="border-t border-gray-600 pt-5">
+        <div class="text-sm text-gray-200">
+          © Copyright
+          <!-- -->2024<!-- -->
+          by
+          <!-- -->overdd<!-- -->. Built with ♥ by<!-- -->
+          <a
+            class="text-cyan-400 hover:underline"
+            href="https://creativedesignsguru.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CreativeDesignsGuru</a
+          >.
+        </div>
+      </div>
     </div>
-  </section>
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Drop me a line!</p>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <p>© 2024 Overdd</p>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
